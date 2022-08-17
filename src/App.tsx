@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 import Fact from './components/Fact';
@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     axios({
       method: 'get',
-      url: 'https://science-fun-facts-api.herokuapp.com/api'
+      url: URL
     }).then(function(response) {
       const data = response.data;
       const index = Math.floor(Math.random() * data.data.length);
@@ -54,8 +54,8 @@ function App() {
           <button onClick={clickRandomFact} style={{margin: 30, fontSize: 22}}>Random Fact</button>
           <button onClick={clickAllFacts} style={{margin: 30, fontSize: 22}}>All Facts</button>
         </div>
-        {currentState == 1 && <Fact factData={randomFact}></Fact>}
-        {currentState == 2 && <FactList facts={data}></FactList>}
+        {currentState === 1 && <Fact factData={randomFact}></Fact>}
+        {currentState === 2 && <FactList facts={data}></FactList>}
       </header>
     </div>
   );
