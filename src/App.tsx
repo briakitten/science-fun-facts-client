@@ -58,6 +58,7 @@ function App() {
         </div>
         {currentState === 1 && <Fact factData={randomFact}></Fact>}
         {currentState === 2 && <FactList facts={data}></FactList>}
+        <p>---------</p>
         <a href="https://github.com/briakitten/science-fun-facts-client"><p>GitHub Source</p></a>
       </header>
     </div>
