@@ -47,12 +47,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Science Fun Facts API</h1>
         <p>
-          Random Science Facts API! (V2)
+          (Prototype from Aug 12th to Aug 17th) <br/>
+          Made with Node.js, React, and PostgreSQL. This queries from this URL backend <a href={URL}>here</a>!
         </p>
         <div style={{display: "flex", flexWrap: "wrap"}}>
-          <button onClick={clickRandomFact} style={{margin: 30, fontSize: 22}}>Random Fact</button>
-          <button onClick={clickAllFacts} style={{margin: 30, fontSize: 22}}>All Facts</button>
+          <button className="button1" onClick={clickRandomFact} style={{margin: 30, fontSize: 22}}>Query Random Fact</button>
+          <button className="button1" onClick={clickAllFacts} style={{margin: 30, fontSize: 22}}>Query All Facts</button>
         </div>
         {currentState === 1 && <Fact factData={randomFact}></Fact>}
         {currentState === 2 && <FactList facts={data}></FactList>}

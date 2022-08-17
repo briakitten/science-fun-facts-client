@@ -11,11 +11,11 @@ const Fact: React.FC<FactProps> = ({factData}) => {
     return (
       <div>
         <hr />
-        <h1>{subject}</h1>
+        <h4>{subject} FACT</h4>
         <p>Fact: {fact}<br/></p>
         <p>{fact_description}</p>
-        <a href={String(video)}>{String(video)}</a>
-        <a href={String(learn_more)}>{String(learn_more)}</a>
+        <a href={String(video)}>{String(video)}</a><br/>
+        <a href={String(learn_more)}>{String(learn_more)}</a><br/><br/>
       </div>
     )
 }
