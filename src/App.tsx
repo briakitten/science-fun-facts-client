@@ -49,8 +49,8 @@ function App() {
       <header className="App-header">
         <h1>Science Fun Facts API</h1>
         <p>
-          (Prototype from Aug 12th to Aug 17th) <br/>
-          Made with Node.js, React, and PostgreSQL. This queries from this URL backend <a href={URL}>here</a>!
+          (This is the official version of this application. <a href="https://github.com/briakitten/ScienceFunFactsV1">V1 can be found here.</a>) <br/>
+          Made with Node.js, React, and PostgreSQL. <a href={URL}>Here is the backend</a>!
         </p>
         <div style={{display: "flex", flexWrap: "wrap"}}>
           <button className="button1" onClick={clickRandomFact} style={{margin: 30, fontSize: 22}}>Query Random Fact</button>
