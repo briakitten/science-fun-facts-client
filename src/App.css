@@ -12,6 +12,40 @@ a {
   color: cyan;
 }
 
+hr {
+  color: #2ebdff;
+}
+
+.request-form input, textarea {
+  display: block;
+  width: 90%;
+  padding: .5rem .8rem .5rem .8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  border:0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* .request-form .fact-description, textarea {
+  height: 400px;
+} */
+
+#fact-description, text {
+  height: 500;
+}
+
+.request-form select {
+  display: block;
+  width: 100%;
+  padding: .5rem .8rem .5rem .8rem;
+  margin: .9vw 0 ;
+  border:0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
 .tabs {
   padding-top: 2rem;
 }
